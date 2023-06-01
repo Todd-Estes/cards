@@ -1,11 +1,10 @@
 package main
 
-import "fmt"
+
 
 func main() {
-	newDeck := newDeckFromFile("my-cards")
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 
-	fmt.Println(newDeck)
-
-}
 
